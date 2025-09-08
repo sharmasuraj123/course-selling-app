@@ -1,11 +1,12 @@
-function createuserRoutes(app) {
-  pp.post("/user/signup", (req, res) => {});
+const { Router } = require("express");
+const userRouter = Router();
 
-  app.post("/user/login", (req, res) => {});
+userRouter.post("/signup", (req, res) => {});
 
-  app.post("/user/perchases", (req, res) => {});
-}
+userRouter.post("/login", (req, res) => {});
+
+userRouter.post("/perchases", (req, res) => {});
 
 module.exports = {
-  createuserRoutes: createuserRoutes,
+  userRouter: userRouter,
 };

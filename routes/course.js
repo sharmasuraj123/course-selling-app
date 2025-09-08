@@ -1,8 +1,9 @@
-function createCourseRoutes(app) {
-  app.get("/course/purchase", (req, res) => {});
-  app.get("/course/preview", (req, res) => {});
-}
+const { Router } = require("express");
+const courseRouter = Router();
+
+courseRouter.get("/course/purchase", (req, res) => {});
+courseRouter.get("/course/preview", (req, res) => {});
 
 module.exports = {
-  createCourseRoutes: createCourseRoutes,
+  courseRouter: courseRouter,
 };
